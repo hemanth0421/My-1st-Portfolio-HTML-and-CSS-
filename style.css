@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #113F67; 
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    font-family: "Nata Sans";
+    color: #ECEEDF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 10px solid black; */
+    width: 50%;
+}
+
+
+.hero h1{
+    font-size: 5.625rem;
+    margin: 5rem 0 0 0;
+    font-weight: 600;
+    /* border: 5px solid burlywood; */
+}
+
+.hero h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    /* border: 5px solid burlywood; */
+}
+
+.dots{
+    color:white;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.luffy{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    color: #ECEEDF;
+    font-family: "Nata Sans";
+    /* border: 10px solid black; */
+}
+
+.profile h2{
+    width: 40%;
+    font-weight: 300;
+    /* border: 5px solid burlywood; */
+}
+
+.div0 h1{
+    color: #CADCAE;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: "Nata Sans";
+
+}
+
+.grid-image{
+    height: 300px;
+    width: 300px;
+    border-radius: 10%;
+}
+
+.grid-image:hover {
+        transform: scale(1.05);
+    }
+
+
+.div0{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.div1{
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 300px 600px;
+    gap: 3rem;
+}
+
+.div2 > h1{
+    margin-bottom: 2rem;
+}
+
+.div2 > h3{
+    color: #ECEEDF;
+    font-weight: 300;
+    font-size: 20pt;
+}
+
+.gallery{
+    text-decoration: none;
+    color: #33A1E0;
+    font-size: 20pt;
+    border-radius: 25px;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+/* It was Claude */
+.gallery:hover {
+        background-color: #33A1E0;
+        color: white;
+        transform: translateY(-2px);
+    }
+    /* It was Claude */
+
+.contact{
+    padding: 5rem 0;
+    text-align: center;
+    
+}
+
+.contact-button{
+    text-decoration: none;
+    color: #ECEEDF;
+    font-size: 20pt;
+    background-color: #33A1E0;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+}
+
+/* I don't know this , it was claude*/
+.contact-button:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(51, 161, 224, 0.5);
+    }
+/* It was claude */
+
+
+.footer{
+    padding: 3rem 3rem;
+    background-color: #33A1E0;
+    text-align: center;
+}
+
+.twitter{
+    text-decoration: none;
+    color: #ECEEDF;
+    font-size: 12pt;
+}
+
+.footer > p{
+    color: #ECEEDF;
+    padding: 1rem 0;
+}
+
+
+
+@media(max-width: 600px){
+
+
+    .content{
+        width:100%;
+        text-align: center;
+    }
+
+    .content > h1{
+        font-size: 5rem;
+        margin: 0px;
+    }
+
+    .profile > h2{
+        width: 100%;
+        text-align: center;
+        padding: 0 2rem;
+    }
+
+    
+    .div1{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .div2{
+        width: 100%;
+        text-align: center;
+        padding: 1rem 2rem;
+        background-color: #1C6EA4;
+        border-radius: 50px;
+    }
+
+    .div2:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(51, 161, 224, 0.5);
+    }
+
+    .div2 > h1{
+        font-size: 2rem;
+    }
+
+    .div2 > h3{
+        font-size: 1.5rem;
+        font-weight: 200;
+    }
+
+    .grid-image{
+        display: none;
+    }
+
+}
